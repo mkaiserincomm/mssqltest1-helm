@@ -8,7 +8,7 @@ image:
   repository: mgkaiser/mssqltest1
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "Build-8"
+  tag: "Build-17"
 
 imagePullSecrets: []
 nameOverride: ""
