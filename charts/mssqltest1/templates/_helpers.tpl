@@ -48,7 +48,6 @@ Selector labels
 {{- define "mssqltest1.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "mssqltest1.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
-app.kubernetes.io/version: {{ .Values.image.tag }}
 {{- end }}
 
 {{/*
