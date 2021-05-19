@@ -5,10 +5,10 @@
 replicaCount: 3
 
 image:
-  repository: mgkaiser/mssqltest1
+  repository: docker.maven.incomm.com/mgkaiser/mssqltest1
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "Build-8"
+  tag: "Build-20"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -48,7 +48,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: mssqltest1.kaiser.guru
+    - host: mssqltest1.sigcntnr.kaiser.guru
       paths:
       - path: 
         backend:
