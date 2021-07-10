@@ -8,7 +8,7 @@ image:
   repository: docker.maven.incomm.com/mgkaiser/mssqltest1
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "Build-21"
+  tag: "Build-22"
 
 imagePullSecrets: []
 nameOverride: ""
