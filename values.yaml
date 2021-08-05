@@ -15,7 +15,12 @@ nameOverride: ""
 fullnameOverride: ""
 
 environment: Development
-
+log:
+  url: splunk-s1-standalone-0.splunk-s1-standalone-headless.splunk.svc.kaiser.guru
+  port: 8088
+  secretname: splunk-secret
+  secretkey: hec_token
+  
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
@@ -48,7 +53,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: mssqltest1.sigcntnr.kaiser.guru
+    - host: mssqltest1.sigcntnr.incomm.com
       paths:
       - path: 
         backend:
