@@ -58,7 +58,7 @@ ingress:
         backend:
           serviceName: mssqltest1
           servicePort: 80
-    - host2: mssqltest1.sigcntnr.kaiser.guru
+    - host: mssqltest1.sigcntnr.kaiser.guru
       paths:
       - path: 
         backend:
