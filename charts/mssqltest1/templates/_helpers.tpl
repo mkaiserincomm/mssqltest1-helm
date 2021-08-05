@@ -36,8 +36,8 @@ Common labels
 {{- define "mssqltest1.labels" -}}
 helm.sh/chart: {{ include "mssqltest1.chart" . }}
 {{ include "mssqltest1.selectorLabels" . }}
-{{- if .Chart.AppVersion }}
-app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
+{{- if .Values.image.tag }}
+app.kubernetes.io/version: {{ .Values.image.tag | quote }}
 {{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end }}
