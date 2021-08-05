@@ -13,7 +13,7 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-environment: 
+environment: Development
 log:
   url: splunk-s1-standalone-0.splunk-s1-standalone-headless.splunk.svc.kaiser.guru
   port: 8088
