@@ -7,7 +7,7 @@ replicaCount: 3
 image:
   repository: docker.maven.incomm.com/mgkaiser/mssqltest1
   pullPolicy: Always  
-  tag: "Build-30"
+  tag: "Build-31"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -19,7 +19,7 @@ log:
   port: 8088
   secretname: splunk-secret
   secretkey: hec_token
-
+  
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
