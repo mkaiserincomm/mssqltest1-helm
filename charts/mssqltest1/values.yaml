@@ -7,12 +7,12 @@ replicaCount: 3
 image:
   repository: docker.maven.incomm.com/mgkaiser/mssqltest1
   pullPolicy: Always  
-  tag: "Build-32"
+  tag: "Build-33"
 
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
-connectionstring: "Server=mssql-mssql-linux.mssql;Database=Northwind;User Id=sa;Password=c0wsRc00l;MultipleActiveResultSets=true" 
+connectionstring: "Server=mssql-mssql-linux.mssql;Database=Northwind;User Id=sa;Password=c0wsRc00l;MultipleActiveResultSets=true"
 
 environment: Development
 log:
