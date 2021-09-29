@@ -32,6 +32,10 @@ serviceAccount:
 
 podAnnotations: {}  
 
+podLabels:
+  app: webtest1
+  version: "latest"  
+
 podSecurityContext: {}
   # fsGroup: 2000
 
