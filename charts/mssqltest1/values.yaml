@@ -34,7 +34,7 @@ podAnnotations: {}
 
 podLabels:
   app: mssqltest1
-  version: "latest"  
+  version: "Build-35"  
 
 podSecurityContext: {}
   # fsGroup: 2000
