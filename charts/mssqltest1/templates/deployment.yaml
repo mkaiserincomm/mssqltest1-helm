@@ -4,6 +4,9 @@ metadata:
   name: {{ include "mssqltest1.fullname" . }}
   labels:
     {{- include "mssqltest1.labels" . | nindent 4 }}
+    {{- with .Values.podLabels }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
@@ -21,6 +24,9 @@ spec:
         {{- end }}
       labels:
         {{- include "mssqltest1.selectorLabels" . | nindent 8 }}
+        {{- with .Values.podLabels }}
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
         app.kubernetes.io/version: {{ .Values.image.tag }}    
     spec:
       {{- with .Values.imagePullSecrets }}
