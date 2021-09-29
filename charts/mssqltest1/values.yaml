@@ -7,7 +7,7 @@ replicaCount: 3
 image:
   repository: docker.maven.incomm.com/mgkaiser/mssqltest1
   pullPolicy: Always  
-  tag: "Build-35"
+  tag: "Build-36"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -30,11 +30,11 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: {} 
+podAnnotations: {}  
 
 podLabels:
   app: webtest1
-  version: "latest"  
+  version: "Build-36"  
 
 podSecurityContext: {}
   # fsGroup: 2000
