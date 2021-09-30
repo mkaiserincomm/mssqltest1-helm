@@ -33,7 +33,7 @@ serviceAccount:
 podAnnotations: {} 
 
 podLabels:
-  app: webtest1
+  app: mssqltest1
   version: "latest"  
 
 podSecurityContext: {}
