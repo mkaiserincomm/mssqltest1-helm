@@ -8,7 +8,7 @@ image:
   repository: mgkaiser/mssqltest1
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "Build-37"
+  tag: "Build-38"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -34,7 +34,7 @@ podAnnotations: {}
 
 podLabels:
   app: mssqltest1
-  version: "Build-37"  
+  version: "Build-38"  
 
 podSecurityContext: {}
   # fsGroup: 2000
