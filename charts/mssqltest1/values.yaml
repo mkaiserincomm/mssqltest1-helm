@@ -7,7 +7,7 @@ replicaCount: 3
 image:
   repository: docker.maven.incomm.com/mgkaiser/mssqltest1
   pullPolicy: Always  
-  tag: "Build-37"
+  tag: "Build-38"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -34,7 +34,7 @@ podAnnotations: {}
 
 podLabels:
   app: mssqltest1
-  version: "latest"  
+  version: "Build-38"  
 
 podSecurityContext: {}
   # fsGroup: 2000
